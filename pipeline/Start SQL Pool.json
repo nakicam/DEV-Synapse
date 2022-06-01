@@ -15,7 +15,10 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://management.azure.com/subscriptions/46aa579a-3ecc-4f85-a662-155a9c477508/resourceGroups/Data_Engineering/providers/Microsoft.Synapse/workspaces/ncsynapse/sqlPools/ncsynapsesqlpool100c/resume?api-version=2021-06-01",
+					"url": {
+						"value": "https://management.azure.com/subscriptions/46aa579a-3ecc-4f85-a662-155a9c477508/resourceGroups/Data_Engineering/providers/Microsoft.Synapse/workspaces/ncsynapse/sqlPools/ncsynapsesqlpool100c/resume?api-version=2021-06-01",
+						"type": "Expression"
+					},
 					"connectVia": {
 						"referenceName": "AutoResolveIntegrationRuntime",
 						"type": "IntegrationRuntimeReference"
