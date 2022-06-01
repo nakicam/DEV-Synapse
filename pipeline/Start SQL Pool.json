@@ -15,15 +15,15 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://management.azure.com/subscriptions/46aa579a-3ecc-4f85-a662-155a9c477508/resourceGroups/Data_Engineering/providers/Microsoft.Synapse/workspaces/ncsynapse/sqlPools/ncsynapsesqlpool100c/resume?api-version=2021-06-01",
+					"url": {
+						"value": "https://management.azure.com/subscriptions/46aa579a-3ecc-4f85-a662-155a9c477508/resourceGroups/Data_Engineering/providers/Microsoft.Synapse/workspaces/ncsynapse/sqlPools/ncsynapsesqlpool100c/resume?api-version=2021-06-01",
+						"type": "Expression"
+					},
 					"connectVia": {
 						"referenceName": "AutoResolveIntegrationRuntime",
 						"type": "IntegrationRuntimeReference"
 					},
 					"method": "POST",
-					"headers": {
-						"application/json": "access-control-allow-headers: Location\naccess-control-expose-headers: Strict-Transport-Security,Azure-AsyncOperation,RetryAfter,Access-Control-Allow-Headers,Access-Control-Expose-Headers,x-ms-request-id,x-ms-ratelimit-remaining-subscription-writes,Date,Location,Server,x-ms-correlation-request-id,x-ms-routing-request-id,Content-Length\nazure-asyncoperation: https://management.azure.com/subscriptions/46aa579a-3ecc-4f85-a662-155a9c477508/resourceGroups/Data_Engineering/providers/Microsoft.Synapse/workspaces/ncsynapse/sqlPools/ncsynapsesqlpool100c/operationStatuses/sql01ftr-4848fa8e-0fe6-4a3f-9e59-f54f18674782?api-version=2021-06-01\ncache-control: no-cache\ncontent-length: 0\ndate: Wed, 01 Jun 2022 12:57:21 GMT\nexpires: -1\nlocation: https://management.azure.com/subscriptions/46aa579a-3ecc-4f85-a662-155a9c477508/resourceGroups/Data_Engineering/providers/Microsoft.Synapse/workspaces/ncsynapse/sqlPools/ncsynapsesqlpool100c/operationResults/sql01ftr-4848fa8e-0fe6-4a3f-9e59-f54f18674782?api-version=2021-06-01\npragma: no-cache\nretryafter: 15\nserver: Microsoft-HTTPAPI/2.0\nstrict-transport-security: max-age=31536000; includeSubDomains\nx-ms-correlation-request-id: aa642f4c-8fc6-495e-9c1a-eecad768247c\nx-ms-ratelimit-remaining-subscription-writes: 1199\nx-ms-request-id: 401618ec-2730-4a25-9136-4d0fc1e117ca\nx-ms-routing-request-id: GERMANYWESTCENTRAL:20220601T125721Z:aa642f4c-8fc6-495e-9c1a-eecad768247c"
-					},
 					"body": "Start des SQL Pool",
 					"authentication": {
 						"type": "MSI",
