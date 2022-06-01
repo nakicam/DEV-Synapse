@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "ncsynapse"
+		},
+		"ncblob_connectionString": {
+			"value": ""
+		},
+		"ncdatalake_accountKey": {
+			"value": ""
+		},
+		"ncsynapse-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"ncdatalake_properties_typeProperties_url": {
+			"value": "https://ncdatalake.dfs.core.windows.net"
+		},
+		"nckeyvault_properties_typeProperties_baseUrl": {
+			"value": "https://nckeyvault.vault.azure.net/"
+		},
+		"ncsynapse-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://ncdatalake.dfs.core.windows.net"
+		}
+	}
+}
