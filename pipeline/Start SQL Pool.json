@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Start-SSIS-IR",
+				"name": "Start-SQL-Pool",
 				"type": "WebActivity",
 				"dependsOn": [],
 				"policy": {
@@ -15,10 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": {
-						"value": "https://management.azure.com/subscriptions/46aa579a-3ecc-4f85-a662-155a9c477508/resourceGroups/Data_Engineering/providers/Microsoft.DataFactory/factories/ncadf/integrationRuntimes/ssis-lift/start?api-version=2018-06-01",
-						"type": "Expression"
-					},
+					"url": "https://management.azure.com/subscriptions/46aa579a-3ecc-4f85-a662-155a9c477508/resourceGroups/Data_Engineering/providers/Microsoft.Synapse/workspaces/ncsynapse/sqlPools/ncsynapsesqlpool100c/resume?api-version=2021-06-01",
 					"connectVia": {
 						"referenceName": "AutoResolveIntegrationRuntime",
 						"type": "IntegrationRuntimeReference"
