@@ -48,7 +48,7 @@
 								},
 								"sink": {
 									"name": "lon",
-									"type": "Double"
+									"type": "String"
 								}
 							},
 							{
@@ -57,30 +57,30 @@
 								},
 								"sink": {
 									"name": "lat",
-									"type": "Double"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
-									"path": "$['weather'][0]['id']"
+									"path": "['id']"
 								},
 								"sink": {
 									"name": "weather'][0]['id",
-									"type": "Double"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
-									"path": "$['weather'][0]['main']"
+									"path": "['main']"
 								},
 								"sink": {
 									"name": "main",
-									"type": "Byte"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
-									"path": "$['weather'][0]['description']"
+									"path": "['description']"
 								},
 								"sink": {
 									"name": "description",
@@ -89,7 +89,7 @@
 							},
 							{
 								"source": {
-									"path": "$['weather'][0]['icon']"
+									"path": "['icon']"
 								},
 								"sink": {
 									"name": "icon",
@@ -209,8 +209,7 @@
 									"path": "$['dt']"
 								},
 								"sink": {
-									"name": "dt",
-									"type": "String"
+									"name": "dt"
 								}
 							},
 							{
