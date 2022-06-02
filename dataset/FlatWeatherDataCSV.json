@@ -10,6 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat('weather', utcNow())",
+					"type": "Expression"
+				},
 				"folderPath": "weatherdata",
 				"fileSystem": "ncdatalake"
 			},
