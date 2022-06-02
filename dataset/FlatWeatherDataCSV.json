@@ -1,0 +1,27 @@
+{
+	"name": "FlatWeatherDataCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ncdatalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "weather.csv",
+					"type": "Expression"
+				},
+				"folderPath": "weatherdata",
+				"fileSystem": "ncdatalake"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

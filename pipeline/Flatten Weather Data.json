@@ -1,0 +1,320 @@
+{
+	"name": "Flatten Weather Data",
+	"properties": {
+		"activities": [
+			{
+				"name": "Flatten Weather Data",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings",
+							"copyBehavior": "FlattenHierarchy"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".csv"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['coord']['lon']"
+								},
+								"sink": {
+									"name": "lon",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['coord']['lat']"
+								},
+								"sink": {
+									"name": "lat",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['id']"
+								},
+								"sink": {
+									"name": "weatherid",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['main']"
+								},
+								"sink": {
+									"name": "main",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['description']"
+								},
+								"sink": {
+									"name": "description",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['icon']"
+								},
+								"sink": {
+									"name": "icon",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['base']"
+								},
+								"sink": {
+									"name": "base",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['main']['temp']"
+								},
+								"sink": {
+									"name": "temp",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['main']['feels_like']"
+								},
+								"sink": {
+									"name": "feels_like",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['main']['temp_min']"
+								},
+								"sink": {
+									"name": "temp_min",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['main']['temp_max']"
+								},
+								"sink": {
+									"name": "temp_max",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['main']['pressure']"
+								},
+								"sink": {
+									"name": "pressure",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['main']['humidity']"
+								},
+								"sink": {
+									"name": "humidity",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['visibility']"
+								},
+								"sink": {
+									"name": "visibility",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['wind']['speed']"
+								},
+								"sink": {
+									"name": "speed",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['wind']['deg']"
+								},
+								"sink": {
+									"name": "deg",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['wind']['gust']"
+								},
+								"sink": {
+									"name": "gust",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['clouds']['all']"
+								},
+								"sink": {
+									"name": "all",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['dt']"
+								},
+								"sink": {
+									"name": "dt"
+								}
+							},
+							{
+								"source": {
+									"path": "$['sys']['type']"
+								},
+								"sink": {
+									"name": "type",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['sys']['id']"
+								},
+								"sink": {
+									"name": "sys_id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['sys']['country']"
+								},
+								"sink": {
+									"name": "country",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['sys']['sunrise']"
+								},
+								"sink": {
+									"name": "sunrise",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['sys']['sunset']"
+								},
+								"sink": {
+									"name": "sunset",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['timezone']"
+								},
+								"sink": {
+									"name": "timezone",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['id']"
+								},
+								"sink": {
+									"name": "id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['name']"
+								},
+								"sink": {
+									"name": "name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['cod']"
+								},
+								"sink": {
+									"name": "cod",
+									"type": "String"
+								}
+							}
+						],
+						"collectionReference": "$['weather']",
+						"mapComplexValuesToString": false
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "OpenWeather",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "FlatWeatherDataCSV",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"folder": {
+			"name": "Flatten JSON Data"
+		},
+		"annotations": []
+	}
+}

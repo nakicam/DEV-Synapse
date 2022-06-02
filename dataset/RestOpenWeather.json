@@ -1,0 +1,12 @@
+{
+	"name": "RestOpenWeather",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Open Weather API",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}

@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Start-SSIS-IR",
+				"name": "Web1",
 				"type": "WebActivity",
 				"dependsOn": [],
 				"policy": {
@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"url": {
-						"value": "https://management.azure.com/subscriptions/46aa579a-3ecc-4f85-a662-155a9c477508/resourceGroups/Data_Engineering/providers/Microsoft.DataFactory/factories/ncadf/integrationRuntimes/ssis-lift/start?api-version=2018-06-01",
+						"value": "https://management.azure.com/subscriptions/46aa579a-3ecc-4f85-a662-155a9c477508/resourceGroups/Data_Engineering/providers/Microsoft.Synapse/workspaces/ncsynapse/sqlPools/ncsynapsesqlpool100c/resume?api-version=2021-06-01",
 						"type": "Expression"
 					},
 					"connectVia": {
@@ -24,11 +24,11 @@
 						"type": "IntegrationRuntimeReference"
 					},
 					"method": "POST",
-					"body": {
-						"message": "Start my IR"
-					},
+					"body": "Start des SQL Pool",
 					"authentication": {
-						"type": "MSI",
+						"type": "ServicePrincipal",
+						"userTenant": "5e94ad53-ff9d-4e36-9b4c-9d99a43d0cca",
+						"username": "sqladminuser",
 						"resource": "https://management.azure.com/"
 					}
 				}
