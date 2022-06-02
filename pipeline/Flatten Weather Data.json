@@ -65,8 +65,7 @@
 									"path": "['id']"
 								},
 								"sink": {
-									"name": "weather'][0]['id",
-									"type": "String"
+									"name": "weatherid"
 								}
 							},
 							{
