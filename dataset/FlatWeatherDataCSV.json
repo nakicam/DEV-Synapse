@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "concat('weather', utcNow())",
+					"value": "weather.csv",
 					"type": "Expression"
 				},
 				"folderPath": "weatherdata",
