@@ -47,7 +47,8 @@
 									"path": "$['coord']['lon']"
 								},
 								"sink": {
-									"name": "lon"
+									"name": "lon",
+									"type": "Double"
 								}
 							},
 							{
@@ -55,7 +56,8 @@
 									"path": "$['coord']['lat']"
 								},
 								"sink": {
-									"name": "lat"
+									"name": "lat",
+									"type": "Double"
 								}
 							},
 							{
@@ -63,7 +65,8 @@
 									"path": "$['weather'][0]['id']"
 								},
 								"sink": {
-									"name": "weather'][0]['id"
+									"name": "weather'][0]['id",
+									"type": "Double"
 								}
 							},
 							{
@@ -71,7 +74,8 @@
 									"path": "$['weather'][0]['main']"
 								},
 								"sink": {
-									"name": "main"
+									"name": "main",
+									"type": "Byte"
 								}
 							},
 							{
@@ -79,7 +83,8 @@
 									"path": "$['weather'][0]['description']"
 								},
 								"sink": {
-									"name": "description"
+									"name": "description",
+									"type": "String"
 								}
 							},
 							{
@@ -87,7 +92,8 @@
 									"path": "$['weather'][0]['icon']"
 								},
 								"sink": {
-									"name": "icon"
+									"name": "icon",
+									"type": "String"
 								}
 							},
 							{
@@ -95,7 +101,8 @@
 									"path": "$['base']"
 								},
 								"sink": {
-									"name": "base"
+									"name": "base",
+									"type": "String"
 								}
 							},
 							{
@@ -103,7 +110,8 @@
 									"path": "$['main']['temp']"
 								},
 								"sink": {
-									"name": "temp"
+									"name": "temp",
+									"type": "String"
 								}
 							},
 							{
@@ -111,7 +119,8 @@
 									"path": "$['main']['feels_like']"
 								},
 								"sink": {
-									"name": "feels_like"
+									"name": "feels_like",
+									"type": "String"
 								}
 							},
 							{
@@ -119,7 +128,8 @@
 									"path": "$['main']['temp_min']"
 								},
 								"sink": {
-									"name": "temp_min"
+									"name": "temp_min",
+									"type": "String"
 								}
 							},
 							{
@@ -127,7 +137,8 @@
 									"path": "$['main']['temp_max']"
 								},
 								"sink": {
-									"name": "temp_max"
+									"name": "temp_max",
+									"type": "String"
 								}
 							},
 							{
@@ -135,7 +146,8 @@
 									"path": "$['main']['pressure']"
 								},
 								"sink": {
-									"name": "pressure"
+									"name": "pressure",
+									"type": "String"
 								}
 							},
 							{
@@ -143,7 +155,8 @@
 									"path": "$['main']['humidity']"
 								},
 								"sink": {
-									"name": "humidity"
+									"name": "humidity",
+									"type": "String"
 								}
 							},
 							{
@@ -151,7 +164,8 @@
 									"path": "$['visibility']"
 								},
 								"sink": {
-									"name": "visibility"
+									"name": "visibility",
+									"type": "String"
 								}
 							},
 							{
@@ -159,7 +173,8 @@
 									"path": "$['wind']['speed']"
 								},
 								"sink": {
-									"name": "speed"
+									"name": "speed",
+									"type": "String"
 								}
 							},
 							{
@@ -167,7 +182,8 @@
 									"path": "$['wind']['deg']"
 								},
 								"sink": {
-									"name": "deg"
+									"name": "deg",
+									"type": "String"
 								}
 							},
 							{
@@ -175,7 +191,8 @@
 									"path": "$['wind']['gust']"
 								},
 								"sink": {
-									"name": "gust"
+									"name": "gust",
+									"type": "String"
 								}
 							},
 							{
@@ -183,7 +200,8 @@
 									"path": "$['clouds']['all']"
 								},
 								"sink": {
-									"name": "all"
+									"name": "all",
+									"type": "String"
 								}
 							},
 							{
@@ -191,7 +209,8 @@
 									"path": "$['dt']"
 								},
 								"sink": {
-									"name": "dt"
+									"name": "dt",
+									"type": "String"
 								}
 							},
 							{
@@ -199,7 +218,8 @@
 									"path": "$['sys']['type']"
 								},
 								"sink": {
-									"name": "type"
+									"name": "type",
+									"type": "String"
 								}
 							},
 							{
@@ -207,7 +227,8 @@
 									"path": "$['sys']['id']"
 								},
 								"sink": {
-									"name": "sys_id"
+									"name": "sys_id",
+									"type": "String"
 								}
 							},
 							{
@@ -215,7 +236,8 @@
 									"path": "$['sys']['country']"
 								},
 								"sink": {
-									"name": "country"
+									"name": "country",
+									"type": "String"
 								}
 							},
 							{
@@ -223,7 +245,8 @@
 									"path": "$['sys']['sunrise']"
 								},
 								"sink": {
-									"name": "sunrise"
+									"name": "sunrise",
+									"type": "String"
 								}
 							},
 							{
@@ -231,7 +254,8 @@
 									"path": "$['sys']['sunset']"
 								},
 								"sink": {
-									"name": "sunset"
+									"name": "sunset",
+									"type": "String"
 								}
 							},
 							{
@@ -239,7 +263,8 @@
 									"path": "$['timezone']"
 								},
 								"sink": {
-									"name": "timezone"
+									"name": "timezone",
+									"type": "String"
 								}
 							},
 							{
@@ -247,7 +272,8 @@
 									"path": "$['id']"
 								},
 								"sink": {
-									"name": "id"
+									"name": "id",
+									"type": "String"
 								}
 							},
 							{
@@ -255,7 +281,8 @@
 									"path": "$['name']"
 								},
 								"sink": {
-									"name": "name"
+									"name": "name",
+									"type": "String"
 								}
 							},
 							{
@@ -263,11 +290,13 @@
 									"path": "$['cod']"
 								},
 								"sink": {
-									"name": "cod"
+									"name": "cod",
+									"type": "String"
 								}
 							}
 						],
-						"collectionReference": "$['weather']"
+						"collectionReference": "$['weather']",
+						"mapComplexValuesToString": false
 					}
 				},
 				"inputs": [
@@ -284,6 +313,9 @@
 				]
 			}
 		],
+		"folder": {
+			"name": "Flatten JSON Data"
+		},
 		"annotations": []
 	}
 }
