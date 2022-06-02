@@ -1,0 +1,20 @@
+{
+	"name": "FlatWeatherData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ncdatalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "weatherdata",
+				"fileSystem": "ncdatalake"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
