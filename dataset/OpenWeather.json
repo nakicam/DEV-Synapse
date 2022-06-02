@@ -1,0 +1,19 @@
+{
+	"name": "OpenWeather",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ncdatalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "weatherdata",
+				"fileSystem": "ncdatalake"
+			}
+		},
+		"schema": {}
+	}
+}
